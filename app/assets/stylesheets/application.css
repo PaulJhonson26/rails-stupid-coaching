@@ -13,3 +13,36 @@
  *= require_tree .
  *= require_self
  */
+
+ .link {
+   color: white;
+   text-decoration: none;
+   padding: 10px;
+   background-color: grey;
+   border-radius: 3px;
+   margin: 10px;
+ }
+ .link:hover{
+   background-color: white;
+   border: 1px solid black;
+   color: grey;
+   transition:ease 0.4s
+ }
+ p {
+   margin:2px;
+ }
+ h3 {
+   margin: 2px;
+ }
+ div {
+   padding-left: 10px;
+   margin: 10px;
+   border-left: 10px solid grey
+ }
+
+ body{
+   font-family: Arial;
+ }
+ .coach{
+   background-color: #FFFFE0
+ }

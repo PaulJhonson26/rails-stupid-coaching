@@ -1,0 +1,16 @@
+<div>
+  <h3><%=params[:question]%></h3>
+  <p> - You </p>
+</div>
+<div class = "coach">
+  <%if params[:question] == "I am going to work"%>
+  <h3>Great!</h3>
+  <%elsif params[:question].ends_with?("?")%>
+  <h3>Silly question, get dressed and go to work!</h3>
+  <%else%>
+  <h3>I don't care, get dressed and go to work!</h3>
+  <%end%>
+  <p> - Your coach </p>
+</div>
+
+<%= link_to "Ask Another Question", ask_path, class: "link" %>
